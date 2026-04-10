@@ -35,12 +35,49 @@
                        MOVE "Y" TO END-OF-FILE 
                    NOT AT END
                        display input-record
-                       MOVE INPUT-RECORD TO NAVN-ADR
+      *                display Fornavn, Efternavn*
+                       string Fornavn delimited by size
+                       " " delimited by size 
+                       Efternavn delimited by size
+                       into NAVN-ADR
+      *                 MOVE INPUT-RECORD TO NAVN-ADR*
                        move NAVN-ADR to KUNDE-ADR    
-                       WRITE KUNDE-ADR 
+      *                WRITE KUNDE-ADR*
                        DISPLAY KUNDE-ADR
+                       MOVE SPACES TO NAVN-ADR 
+                       display NAVN-ADR
+                       display VEJNAVN
+                       string VEJNAVN delimited by size
+                       " " delimited by size 
+                       HUSNR delimited by size
+                       " " delimited by size 
+                       ETAGE delimited by size
+                       " " delimited by size 
+                       SIDE delimited by size
+                       into NAVN-ADR
+                       display NAVN-ADR
+                       MOVE SPACES TO NAVN-ADR 
+                       display NAVN-ADR
+                       string POSTNR delimited by size
+                       " " delimited by size 
+                       BYx delimited by size
+                       into NAVN-ADR
+                       display NAVN-ADR
+                       MOVE SPACES TO NAVN-ADR 
+                       display NAVN-ADR
+                       move POSTNR into NAVN-ADR
+                       display NAVN-ADR
+                       MOVE SPACES TO NAVN-ADR 
+                       display NAVN-ADR
+
+                       MOVE SPACES TO NAVN-ADR 
+                       display NAVN-ADR
                END-READ 
            END-PERFORM 
+           
+            
+
+
            close OUTPUT-FILE-1
            CLOSE input-file-1
            

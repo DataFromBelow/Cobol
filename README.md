@@ -1,2 +1,2 @@
 # Cobol
-This is my attempt to learn GnuCobol
+This is my attempt to learn GnuCobol. It is not going very well...
